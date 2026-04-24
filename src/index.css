@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Fraunces:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  background: #050408;
+  color: #F5F1E8;
+}
+
+.display-font { font-family: 'Fraunces', serif; }
+
+input:focus, textarea:focus, select:focus { outline: none; }
+
+@keyframes pulse-glow { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+.pulse { animation: pulse-glow 3s ease-in-out infinite; }
